@@ -926,10 +926,8 @@ summary {
 }
 
 @media (max-width: 61.99875em) {
-  .header__column:last-child .header__link {
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
+  .header__column:last-child .header__link#account {
+    width: 5rem;
   }
 }
 
