@@ -3992,50 +3992,94 @@
             });
         }
         function initSliders() {
-            if (document.querySelector(".categories__container")) new swiper_core_Swiper(".categories__container", {
-                modules: [ Navigation, freeMode ],
-                observer: true,
-                observeParents: true,
-                slidesPerView: 1.5,
-                spaceBetween: 12,
-                speed: 800,
-                freeMode: {
-                    enabled: true,
-                    momentumRatio: .5
-                },
-                mousewheel: {
-                    sensitivity: 1
-                },
-                breakpoints: {
-                    400: {
-                        slidesPerView: 1.75
+            if (document.querySelector(".categories__container")) {
+                new swiper_core_Swiper(".categories__container", {
+                    modules: [ Navigation, freeMode ],
+                    observer: true,
+                    observeParents: true,
+                    slidesPerView: 1.5,
+                    spaceBetween: 12,
+                    speed: 800,
+                    freeMode: {
+                        enabled: true,
+                        momentumRatio: .5
                     },
-                    500: {
-                        slidesPerView: 2.5
+                    mousewheel: {
+                        sensitivity: 1
                     },
-                    700: {
-                        slidesPerView: 3.5,
-                        spaceBetween: 12
-                    },
-                    768: {
-                        slidesPerView: 4.5,
-                        spaceBetween: 30
-                    },
-                    930: {
-                        slidesPerView: 5.5,
-                        spaceBetween: 30
-                    },
-                    1050: {
-                        slidesPerView: 6.5
-                    },
-                    1150: {
-                        slidesPerView: 7.5
-                    },
-                    1320: {
-                        slidesPerView: 8
+                    breakpoints: {
+                        400: {
+                            slidesPerView: 1.75,
+                            spaceBetween: 12
+                        },
+                        500: {
+                            slidesPerView: 2.5,
+                            spaceBetween: 12
+                        },
+                        700: {
+                            slidesPerView: 3.5,
+                            spaceBetween: 12
+                        },
+                        768: {
+                            slidesPerView: 4.5,
+                            spaceBetween: 30
+                        },
+                        930: {
+                            slidesPerView: 5.5,
+                            spaceBetween: 30
+                        },
+                        1050: {
+                            slidesPerView: 6.5,
+                            spaceBetween: 30
+                        },
+                        1150: {
+                            slidesPerView: 7.5,
+                            spaceBetween: 30
+                        },
+                        1320: {
+                            slidesPerView: 8,
+                            spaceBetween: 30
+                        }
                     }
-                }
-            });
+                });
+                new swiper_core_Swiper(".promotions__container", {
+                    modules: [ Navigation, freeMode ],
+                    observer: true,
+                    observeParents: true,
+                    slidesPerView: 1.25,
+                    spaceBetween: 12,
+                    speed: 800,
+                    freeMode: {
+                        enabled: true,
+                        momentumRatio: .5
+                    },
+                    mousewheel: {
+                        sensitivity: 1
+                    },
+                    breakpoints: {
+                        400: {
+                            slidesPerView: 1.5,
+                            spaceBetween: 12
+                        },
+                        700: {
+                            slidesPerView: 2.5,
+                            spaceBetween: 12
+                        },
+                        768: {
+                            slidesPerView: 2.5,
+                            spaceBetween: 30
+                        },
+                        930: {
+                            slidesPerView: 3.5,
+                            spaceBetween: 30
+                        },
+                        1150: {
+                            slidesPerView: 4,
+                            spaceBetween: 30
+                        }
+                    }
+                });
+            }
         }
         window.addEventListener("load", (function(e) {
             initSliders();
